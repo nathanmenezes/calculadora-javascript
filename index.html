@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="background">
+        <h1 class="title">
+            <span class="mark">
+                <</span>Dev/<span class="mark ">>
+            </span> Nathan
+        </h1>
+        <div class="calculadora">
+            <div class="calculadora-style">
+                <p id="resultado">
+                    
+                </p>
+                <table>
+                    <tr>
+                        <td><button id="c" onclick="c()">C</button></td>
+                        <td><button id="menor" onclick="apagar()"><</button></td> 
+                        <td><button id="dividir" onclick="operation('dividir')">/</button></td>
+                        <td><button id="multiplicar" onclick="operation('multiplicar')">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="sete" onclick="getNum('7')">7</button></td>
+                        <td><button id="oito" onclick="getNum('8')">8</button></td>
+                        <td><button id="nove" onclick="getNum('9')">9</button></td>
+                        <td><button id="menos" onclick="operation('menos')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="quatro" onclick="getNum('4')">4</button></td>
+                        <td><button id="cinco" onclick="getNum('5')">5</button></td>
+                        <td><button id="seis" onclick="getNum('6')">6</button></td>
+                        <td><button id="mais" onclick="operation('mais')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="um" onclick="getNum('1')">1</button></td>
+                        <td><button id="dois" onclick="getNum('2')">2</button></td>
+                        <td><button id="tres" onclick="getNum('3')">3</button></td>
+                        <td rowspan="2"><button id="igual" onclick="igual()">=</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button id="zero" onclick="getNum('0')">0</button></td>
+                        <td><button id="ponto" onclick="getNum('.')">.</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
